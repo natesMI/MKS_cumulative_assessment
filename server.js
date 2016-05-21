@@ -14,7 +14,7 @@ var client = new Twitter({
 });
 
 app.get('/api/start', function(req, res){
-  client.get('statuses/user_timeline', {screen_name: 'katyperry', count: 25}, function(error, tweets, response) {
+  client.get('statuses/home_timeline', {count: 25}, function(error, tweets, response) {
    res.send(tweets);
   });
 });

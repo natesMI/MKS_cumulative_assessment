@@ -6,6 +6,6 @@ angular.module('twittler.home', [])
   	Tweets.twittlerStartup().then(function(data){
   		$scope.feed = data.data;
   	});
-  }
+  };
   $scope.start();
 });

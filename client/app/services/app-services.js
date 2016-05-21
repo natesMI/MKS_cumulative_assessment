@@ -25,6 +25,6 @@ angular.module('twittler.services', [])
   	twittlerStartup: twittlerStartup,
   	getUserProfile: getUserProfile,
   	getUserFeed: getUserFeed
-  }
+  };
 
 });

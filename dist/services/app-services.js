@@ -1,0 +1,1 @@
+angular.module("twittler.services",[]).factory("Tweets",function(e){function r(){return e.get("api/start")}function t(r){return e({method:"GET",url:"api/profiles",headers:{user:r}})}function u(r){return e({method:"GET",url:"api/users",headers:{user:r}})}return{twittlerStartup:r,getUserProfile:t,getUserFeed:u}});

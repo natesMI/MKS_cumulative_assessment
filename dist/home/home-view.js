@@ -1,0 +1,1 @@
+angular.module("twittler.home",[]).controller("TwittlerHome",function(t,o){t.start=function(){o.twittlerStartup().then(function(o){console.log("working"),t.feed=o.data})},t.start()});

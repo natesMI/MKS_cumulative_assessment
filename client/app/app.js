@@ -12,6 +12,6 @@ angular.module('twittler', ['twittler.services', 'twittler.home', 'twittler.sear
       controller: 'TwittlerSearch'
     })
     
-    .otherwise({redirectTo: '/home'})
+    .otherwise({redirectTo: '/home'});
     
 });
