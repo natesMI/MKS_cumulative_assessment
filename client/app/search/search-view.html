@@ -1,0 +1,28 @@
+<div>
+  <div id="search-bar"> 
+    <h3>User Search</h3>
+    <label for="tweet-search">Search Tweets</label>
+    <input id="tweet-search" type="text" placeholder="@katyperry" ng-model="search_input">
+    <button ng-click="search(search_input); search_input='';">Find User</button>
+    <span class="error">{{ errMessage }}</span>
+  </div>
+    
+    <div>
+      <div id="user-profile" ng-if="profile">
+        <h1 id="profile-name">{{ profile.name}}</h1>
+        <h3 id="user-handle">@<span>{{ profile.screen_name }}</span></h3>
+        <div id="image-box">
+          <img src="{{ profile.profile_image_url }}" width="200px">
+        </div>
+        <h3>Followers: <span>{{ profile.followers_count }}</span></h3>
+        <h3>Friends: <span>{{ profile.friends_count }}</span></h3>
+      </div>
+
+      <div id="tweet-roll" ng-repeat="key in feed">
+      <div class="tweet-container">
+        <div class="user-name">{{ key.user.name }}</div>
+        <div class="user-tweet">{{ key.text }}</div>
+        <div class="user-time">{{ key.created_at }}</div>	
+      </div>
+    </div>
+</div>

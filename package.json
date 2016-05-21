@@ -17,6 +17,10 @@
   "author": "nate_schwab",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "twitter": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
   }
 }

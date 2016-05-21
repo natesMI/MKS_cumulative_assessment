@@ -5,22 +5,26 @@
 	<link rel="stylesheet" type="text/css" href="./styles/styles.css" />
 </head>
 <body>
+  <header>
+    TWITTLER
+  </header>
+
   <nav id="navigation">
   	<ul>
-  	  <li></li>
-  	  <li></li>
-  	  
+  	  <li><a href="/#/home">Home</a></li>
+      <li><a href="/#/search">Search</a></li>
   	</ul>
   </nav>
 
 
-  <div></div>
+  <div ng-view></div>
 
-  <script src=""></script>
-  <script src=""></script>
-
-
-
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-route/angular-route.js"></script>
+  <script src="./app/home/home-view.js"></script>
+  <script src="./app/search/search-view.js"></script>
+  <script src="./app/services/app-services.js"></script>
+  <script src="./app/app.js"></script>
 </body>	
 
 </html>

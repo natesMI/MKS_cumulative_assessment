@@ -1,0 +1,10 @@
+<div>
+    <h3>Trending</h3>
+
+    <div id="tweet-roll" ng-repeat="key in feed">
+    <div class="tweet-container">
+      <div class="user-name">{{ key.user.name }}</div>
+      <div class="user-tweet">{{ key.text }}</div>
+      <div class="user-time">{{ key.created_at }}</div>	
+    </div>
+</div>
