@@ -1,6 +1,5 @@
 var express = require('express');
 var Twitter = require('twitter');
-var credentials = require('./twittler-secret.js');
 
 var app = express();
 
