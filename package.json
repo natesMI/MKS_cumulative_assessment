@@ -1,0 +1,22 @@
+{
+  "name": "nates_assess",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "server.js",
+  "scripts": {
+    "test": "none",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "nate_schwab",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
